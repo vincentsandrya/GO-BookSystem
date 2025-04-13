@@ -11,17 +11,17 @@ import (
 )
 
 var (
-	// host string = os.Getenv("DB_HOST")
-	// port = os.Getenv("DB_PORT")
-	// user     = os.Getenv("DB_USER")
-	// password = os.Getenv("DB_PASSWORD")
-	// dbname   = os.Getenv("DB_NAME")
+	// host     string = os.Getenv("DB_HOST")
+	// port, _         = strconv.Atoi(os.Getenv("DB_PORT"))
+	// user            = os.Getenv("DB_USER")
+	// password        = os.Getenv("DB_PASSWORD")
+	// dbname          = os.Getenv("DB_NAME")
 
-	host     string = "localhost"
+	host     string = "postgres.railway.internal"
 	port            = 5432
 	user            = "postgres"
-	password        = "myB@nk88"
-	dbname          = "gosanber"
+	password        = "KlnTYuvamHUJDYQTJcGMHvsgOmNAkVAs"
+	dbname          = "railway"
 )
 
 var (

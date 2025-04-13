@@ -2,6 +2,30 @@
 
 
 <!-- DOCUMENTATION API (POSTMAN .JSON)-->
+List end point : 
+1. POST {{base_url}}/api/users/login
+ - Kegunaan : API ini berfungsi untuk login dengan akun yang sudah terdaftar, bisa mengunakan (admin, password). API ini akan mengembalikan data user beserta token yang akan di simpan di cache
+2. GET {{base_url}}/api/categories/
+ - Kegunaan : API ini akan mengembalikan semua data kategori buku yang tersedia
+3. GET {{base_url}}/api/categories/:id
+ - Kegunaan : API ini akan mengembalikan detail data kategori buku dengan spesifik id kategori yang diberikan
+4. POST {{base_url}}/api/categories/
+ - Kegunaan :  API ini berfungsi untuk menambahkan kategori buku, dengan validasi nama harus unik
+5. DELETE {{base_url}}/api/categories/:id
+ - Kegunaan : API ini untuk menghapus data kategori berdasarkan id kategori yang dikirimkan, dengan validasi jika id tersedia
+6. GET {{base_url}}/api/categories/:id/books
+ Kegunaan : API ini berfungsi untuk mendapatkan semua data buku yang memiliki kategori sesuai dengan id kategori yang diberikan
+7. GET {{base_url}}/api/books
+ Kegunaan : API ini untuk mendapatkan semua data buku yang tersedia
+8. GET {{base_url}}/api/books/:id
+ Kegunaan : API ini untuk mendapatkan data buku spesifik dari id buku yang diberikan
+9. POST {{base_url}}/api/books/
+ Kegunaan : API ini untuk menambahkan data buku
+10. DELETE {{base_url}}/api/books/:id
+ - Kegunaan : API ini untuk menghapus data buku berdasarkan id buku yang dikirimkan, dengan validasi jika id tersedia
+
+hasil export .json dari postman
+
 {
 	"info": {
 		"_postman_id": "07e945b1-2c63-48fb-9fd0-1be046ccfe9b",
