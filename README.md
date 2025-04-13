@@ -1,5 +1,8 @@
 # GO-BookSystem
-
+Aplikasi pengelolaan data buku, dengan mengunakan teknologi :
+ - GIN
+ - token JWT as cache
+ - session
 
 <!-- DOCUMENTATION API (POSTMAN .JSON)-->
 List end point : 

@@ -35,8 +35,8 @@ CREATE TABLE IF NOT EXISTS Users (
     created_by varchar(200),
     modified_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
     modified_by varchar(200)
-)
+);
 
-INSERT INTO Users (username, password, created_by, modified_by) VALUES ('admin', 'password', 'admin', 'admin')
+INSERT INTO Users (username, password, created_by, modified_by) VALUES ('admin', 'password', 'admin', 'admin');
 
 -- +migrate StatementEnd
